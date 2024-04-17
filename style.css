@@ -86,6 +86,10 @@ nav a:hover {
     margin-left: 2px;
 }
 
+.icono {
+    margin-left: 10px;
+}
+
 .icono:hover {
     cursor: pointer;
 }
@@ -227,29 +231,80 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width:480px) {
+@media (max-width:1060px) {
 
-    .icono {
-        position: absolute;
-        left: 50%;
-        top: 10px;
-    }
+ header{
+    justify-content: space-between;
+ }
 
     .icono a img {
-        width: 80px;
-        left: 50px;
+        width: 20%;
     }
 
     .icono a h1 {
         font-size: x-large;
-        width: 160px;
+    }
+
+    .busqueda_marcas {
+        justify-content: center;
     }
 
     .busqueda {
         margin-top: 100px;
+        margin-left: 30px;
+        width: 200px;
+    }
+
+    .marcas {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .busqueda input {
+        width: 130px;
+    }
+}
+
+@media (max-width:480px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .icono {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: -15%;
+    }
+
+    .icono a img {
+        width: 50px;
+
+    }
+
+    .icono a h1 {
+        font-size: x-large;
+        width: auto;
+    }
+
+    .busqueda_marcas {
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 3%;
+    }
+
+    .busqueda {
+        margin-top: 90px;
         margin-left: 10%;
         height: 40px;
         width: 180px;
+        margin-bottom: 1px;
+        align-items: center;
+    }
+
+    .marcas {
+        margin-top: 5px;
+        margin-left: 5px;
     }
 
     .busqueda input {
@@ -298,7 +353,7 @@ main {
 .publicaciones {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    gap: 10px;
+    column-gap: 10px;
     row-gap: 50px;
     width: 100%;
     padding: 20px;
@@ -313,6 +368,7 @@ main {
 .publicacion {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-radius: 5px;
     border: solid 1px;
     border-color: rgba(0, 0, 0, 0.582);
