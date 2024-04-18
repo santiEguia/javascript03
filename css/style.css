@@ -271,10 +271,6 @@ footer {
         width: 100vw;
     }
 
-    .icono {
-        margin-left:
-    }
-
     .icono a img {
         width: 100px;
 
@@ -455,12 +451,12 @@ main {
 
 .publicaciones {
     display: grid;
+    padding: 20px;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     column-gap: 10px;
     row-gap: 50px;
-    width: 100%;
-    padding: 20px;
-    justify-content: center;
+    width: 100vw;
+    justify-items: center;
 }
 
 .publicacion img {
