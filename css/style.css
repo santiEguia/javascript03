@@ -232,9 +232,9 @@ footer {
 
 @media (max-width:1060px) and (min-width: 850px) {
 
- header{
-    justify-content: space-between;
- }
+    header {
+        justify-content: space-between;
+    }
 
     .icono a img {
         width: 20%;
@@ -305,7 +305,7 @@ footer {
     .busqueda input {
         width: 130px;
     }
-   }
+}
 
 @media (max-width:610px) and (min-width:480px) {
 
@@ -355,59 +355,59 @@ footer {
     }
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-header {
-    justify-content: space-between;
-}
+    header {
+        justify-content: space-between;
+    }
 
-.icono {
-    position: absolute;
-    margin-left: 45%;
-    margin-top: -15%;
-}
+    .icono {
+        position: absolute;
+        margin-left: 45%;
+        margin-top: -15%;
+    }
 
-.icono a img {
-    width: 60px;
+    .icono a img {
+        width: 60px;
 
-}
+    }
 
-.icono a h1 {
-    font-size: medium;
-    width: auto;
-    align-items: center;
-}
+    .icono a h1 {
+        font-size: medium;
+        width: auto;
+        align-items: center;
+    }
 
-.busqueda_marcas {
-    justify-content: space-between;
-    height: 100%;
-    margin-left: 3%;
-}
+    .busqueda_marcas {
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 3%;
+    }
 
-.busqueda {
-    margin-top: 120px;
-    margin-left: 2px;
-    height: 30px;
-    width: 170px;
-    align-items: center;
-}
+    .busqueda {
+        margin-top: 120px;
+        margin-left: 2px;
+        height: 30px;
+        width: 170px;
+        align-items: center;
+    }
 
-.busqueda input{
-    position: absolute;
-    margin-left: 30px;
-    width: 50px;
+    .busqueda input {
+        position: absolute;
+        margin-left: 30px;
+        width: 50px;
 
-}
+    }
 
-.marcas {
-    visibility: hidden;
-    margin-top: 5px;
-    margin-left: 0px;
-}
+    .marcas {
+        visibility: hidden;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
 
-.busqueda input {
-    width: 130px;
-}
+    .busqueda input {
+        width: 130px;
+    }
 }
 
 
@@ -435,17 +435,58 @@ main {
     margin-bottom: 50px;
     background-color: rgba(0, 0, 0, 0.849);
     padding: 10px;
+    grid-template-areas: "pimg pp";
 }
 
-.presentacion img {
+.imgpres{
+    display: flex;
+    justify-content: center;
+}
+
+.imgpres img {
     border: solid 2px rgba(255, 0, 0, 0.527);
     border-radius: 2px;
-    width: 47vw;
+    overflow: hidden;
+    grid-area: pimg;
+    height: 300px;
+    object-position: center center;
 }
 
-.presentacion p {
+.parpres {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: larger;
+    grid-area: pp;
+}
+
+
+@media (max-width:850px) and (min-width:480px) {
+
+    .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-areas: "pimg"
+            "pp";
+    }
+
+}
+
+@media (max-width:480px) {
+    .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-areas: "pimg"
+            "pp";
+    }
+
+    .parpres {
+        font-size: small;
+    }
+
+    .imgpres img {
+        height: 200px;
+        object-fit: cover;
+    }
+
 }
 
 
@@ -542,19 +583,19 @@ main {
 }
 
 
-.infoC {
+.infoc {
     grid-area: infoc;
     background-color: rgba(0, 0, 0, 0.678);
     padding: 20px;
 }
 
-.infoP {
+.infop {
     grid-area: infop;
     background-color: rgba(0, 0, 0, 0.678);
     padding: 20px;
 }
 
-.infoB {
+.infob {
     grid-area: infob;
     background-color: rgba(0, 0, 0, 0.678);
     padding: 20px;
@@ -583,6 +624,30 @@ main {
     height: 350px;
     grid-area: natacion;
 }
+
+@media(max-width:600px) {
+
+    .infoProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        grid-template-areas:
+            "infoc"
+            "musculacion"
+            "infob"
+            "boxeo "
+            "infop"
+            "natacion";
+        gap: 10px;
+    }
+
+    .infoc .infob .infop p {
+        font-size: small;
+    }
+}
+
+
 
 /*CONTACTO*/
 /*CONTACTO*/
@@ -634,6 +699,34 @@ main {
 
 }
 
+.mapa{
+    border-radius: 5px;
+    height: 40vh;
+    width: 80vw;
+}
+
+
+@media(max-width:550px){
+    .contacto ul{
+        width: 300px;
+    }
+
+    .contacto ul li{
+        display: flex;
+        justify-content: start;
+    }
+
+    .contacto ul li a img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+
+    }
+
+    .contacto ul li a h2{
+        font-size: medium;
+    }
+}
 
 /*ACCEDER*/
 /*ACCEDER*/
