@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background-image: url(./img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
 
     background-position: center center;
     background-repeat: no-repeat;
@@ -462,7 +462,7 @@ main {
 }
 
 .musculacion {
-    background-image: url(./img/deportes/musculacion1.jpg);
+    background-image: url(../img/deportes/musculacion1.jpg);
     background-position: center center;
     background-size: cover;
     height: 350px;
@@ -470,7 +470,7 @@ main {
 }
 
 .boxeo {
-    background-image: url(./img/deportes/boxeo.jpg);
+    background-image: url(../img/deportes/boxeo.jpg);
     background-position: center center;
     background-size: cover;
     height: 350px;
@@ -478,7 +478,7 @@ main {
 }
 
 .natacion {
-    background-image: url(./img/deportes/natacion.jpg);
+    background-image: url(../img/deportes/natacion.jpg);
     background-position: center center;
     background-size: cover;
     height: 350px;
