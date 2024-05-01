@@ -1,3 +1,7 @@
+/*base*/
+/*components*/
+/*body*/
+/*body*/
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -9,6 +13,20 @@ body {
   overflow-x: hidden;
 }
 
+/*main*/
+/*main*/
+main {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*header*/
+/*header*/
 header {
   display: flex;
   height: 170px;
@@ -29,12 +47,12 @@ header {
   transition-duration: 0.5s;
 }
 
-.navimg {
+.menu img {
   width: 25px;
   padding-right: 8px;
 }
 
-nav a {
+.menu a {
   text-decoration: none;
   color: black;
   display: flex;
@@ -43,8 +61,7 @@ nav a {
   align-items: center;
   transition-duration: 0.5s;
 }
-
-nav a:hover {
+.menu a:hover {
   color: aliceblue;
 }
 
@@ -59,6 +76,12 @@ nav a:hover {
   background-color: red;
   border-radius: 100px;
   transition-duration: 0.5s;
+}
+.icono a img:hover {
+  box-shadow: inset 0px 0px 20px 0px rgb(255, 255, 255);
+  padding: 2px;
+  border-radius: 100px;
+  margin-top: -15px;
 }
 
 .icono h1 {
@@ -83,16 +106,8 @@ nav a:hover {
 .icono {
   margin-left: 10px;
 }
-
 .icono:hover {
   cursor: pointer;
-}
-
-.icono a img:hover {
-  box-shadow: inset 0px 0px 20px 0px rgb(255, 255, 255);
-  padding: 2px;
-  border-radius: 100px;
-  margin-top: -15px;
 }
 
 .busqueda_marcas {
@@ -124,6 +139,9 @@ nav a:hover {
 .btn {
   background-color: white;
 }
+.btn:hover {
+  background-color: red;
+}
 
 .marcas {
   display: flex;
@@ -141,8 +159,7 @@ nav a:hover {
   height: 20px;
   transition: 0.2s;
 }
-
-.marcas img:hover {
+.marcas a img:hover {
   border: solid red 0.5px;
   transform: scale(1.2);
 }
@@ -153,18 +170,39 @@ nav a:hover {
   height: 25px;
 }
 
+/*titulo*/
+/*titulo*/
+.titulo {
+  width: auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 5px;
+}
+
+/*subtitulo*/
+/*subtitulo*/
+.subtitulo {
+  text-decoration: underline;
+}
+
+/*footer*/
+/*footer*/
 footer {
   height: 100px;
   background-color: rgba(255, 0, 0, 0.404);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 10px 10px 10px 10px;
   align-items: center;
+  grid-template-areas: "redes . copy";
+  margin-top: 15vh;
 }
 
 .redes {
   display: flex;
   flex-direction: column;
+  grid-area: redes;
 }
 
 .redes p {
@@ -196,22 +234,18 @@ footer {
   padding-left: 0px;
 }
 
-#copy {
+.copy {
+  grid-area: copy;
+  display: flex;
+  justify-content: end;
+}
+
+.copy p {
   color: aliceblue;
 }
 
-.titulo {
-  width: auto;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.678);
-  padding: 5px;
-}
-
-.subtitulo {
-  text-decoration: underline;
-}
-
+/*media queries*/
+/*media queries*/
 @media (max-width: 1060px) and (min-width: 850px) {
   header {
     justify-content: space-between;
@@ -348,16 +382,103 @@ footer {
     width: 130px;
   }
 }
-main {
-  align-content: center;
+/*layouts*/
+/*ACCEDER*/
+/*ACCEDER*/
+.acceder {
+  margin-bottom: 130px;
+  margin-top: 50px;
+}
+
+.acceder form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4862745098);
+}
+
+.acceder form input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.acceder form p a {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 5px;
+}
+
+/*CONTACTO*/
+/*CONTACTO*/
+.contacto {
+  margin-bottom: 100px;
+}
+
+.contacto a {
+  text-decoration: none;
+}
+
+.contacto ul {
+  background-color: rgba(0, 0, 0, 0.678);
+  border-radius: 10px;
+  list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
+.contacto ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.contacto ul li a img {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+  background-color: rgba(92, 92, 92, 0.616);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.contacto ul li a h2 {
+  background-color: rgba(92, 92, 92, 0.616);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+.contacto ul li a h2:hover {
+  background-color: rgba(92, 92, 92, 0);
+  color: rgb(255, 0, 0);
+  border: solid 0.5px rgba(92, 92, 92, 0.616);
+}
+
+.mapa {
+  border-radius: 5px;
+  height: 40vh;
+  width: 80vw;
+}
+
+@media (max-width: 550px) {
+  .contacto ul {
+    width: 300px;
+  }
+  .contacto ul li {
+    display: flex;
+    justify-content: start;
+  }
+  .contacto ul li a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .contacto ul li a h2 {
+    font-size: medium;
+  }
+}
 /*publicaciones*/
 /*publicaciones*/
 .presentacion {
@@ -449,25 +570,6 @@ main {
   background-color: rgba(255, 255, 255, 0.603);
   transition-duration: 0.5s;
 }
-
-.publ_general {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 150px;
-  transition: 0.5s;
-}
-
-.publ_general img {
-  transition: 0.5s;
-}
-
-.descrip {
-  visibility: hidden;
-  padding: 20px;
-  font-size: small;
-}
-
 .publicacion:hover {
   cursor: pointer;
   box-shadow: 0px 0px 5px 5px rgba(61, 61, 61, 0.747);
@@ -477,7 +579,7 @@ main {
   height: 400px;
 }
 .publicacion:hover .descrip {
-  visibility: visible;
+  display: flex;
 }
 .publicacion:hover .publ_general {
   margin-top: 0px;
@@ -487,36 +589,30 @@ main {
   object-fit: cover;
 }
 
+.publ_general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  transition: 0.5s;
+}
+
+.publ_general img {
+  transition: 0.5s;
+}
+
+.descrip {
+  display: none;
+  padding: 20px;
+  font-size: small;
+  transition: 0.5s;
+}
+
 @media (max-width: 768px) {
   .publicaciones {
     grid-template-columns: 1fr;
   }
 }
-/*REGISTRO*/
-/*REGISTRO*/
-.registro {
-  margin-bottom: 20px;
-}
-
-.registro form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.4862745098);
-}
-
-.registro form input {
-  margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.registro form p a {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.678);
-  padding: 5px;
-}
-
 /*info*/
 /*info*/
 .infoProductos {
@@ -583,98 +679,26 @@ main {
     font-size: small;
   }
 }
-/*CONTACTO*/
-/*CONTACTO*/
-.contacto {
-  margin-bottom: 100px;
+/*REGISTRO*/
+/*REGISTRO*/
+.registro {
+  margin-bottom: 20px;
 }
 
-.contacto a {
-  text-decoration: none;
-}
-
-.contacto ul {
-  background-color: rgba(0, 0, 0, 0.678);
-  border-radius: 10px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contacto ul li a {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  color: aliceblue;
-}
-
-.contacto ul li a img {
-  width: 50px;
-  height: 50px;
-  margin-right: 40px;
-  background-color: rgba(92, 92, 92, 0.616);
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.contacto ul li a h2 {
-  background-color: rgba(92, 92, 92, 0.616);
-  padding: 10px;
-  border-radius: 5px;
-  transition: 0.8s;
-}
-
-.contacto ul li a h2:hover {
-  background-color: rgba(92, 92, 92, 0);
-  color: rgb(255, 0, 0);
-  border: solid 0.5px rgba(92, 92, 92, 0.616);
-}
-
-.mapa {
-  border-radius: 5px;
-  height: 40vh;
-  width: 80vw;
-}
-
-@media (max-width: 550px) {
-  .contacto ul {
-    width: 300px;
-  }
-  .contacto ul li {
-    display: flex;
-    justify-content: start;
-  }
-  .contacto ul li a img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  .contacto ul li a h2 {
-    font-size: medium;
-  }
-}
-/*ACCEDER*/
-/*ACCEDER*/
-.acceder {
-  margin-bottom: 130px;
-  margin-top: 50px;
-}
-
-.acceder form {
+.registro form {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4862745098);
 }
 
-.acceder form input {
+.registro form input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
 }
 
-.acceder form p a {
+.registro form p a {
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.678);
   padding: 5px;

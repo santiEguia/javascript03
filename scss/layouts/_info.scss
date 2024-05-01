@@ -1,0 +1,67 @@
+/*info*/
+/*info*/
+.infoProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    grid-template-areas: "infoc musculacion" "boxeo infob" "infop natacion";
+    gap: 10px;
+}
+
+.infoc {
+    grid-area: infoc;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 20px;
+}
+
+.infop {
+    grid-area: infop;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 20px;
+}
+
+.infob {
+    grid-area: infob;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 20px;
+}
+
+.musculacion {
+    background-image: url(../img/deportes/musculacion1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    grid-area: musculacion;
+}
+
+.boxeo {
+    background-image: url(../img/deportes/boxeo.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    grid-area: boxeo;
+}
+
+.natacion {
+    background-image: url(../img/deportes/natacion.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    grid-area: natacion;
+}
+
+@media (max-width: 600px) {
+    .infoProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        grid-template-areas: "infoc" "musculacion" "infob" "boxeo " "infop" "natacion";
+        gap: 10px;
+    }
+
+    .infoc .infob .infop p {
+        font-size: small;
+    }
+}

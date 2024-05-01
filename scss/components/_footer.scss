@@ -1,0 +1,59 @@
+  /*footer*/
+  /*footer*/
+  
+  footer {
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.404);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    grid-template-areas: "redes . copy";
+    margin-top: 15vh;
+  }
+  
+  .redes {
+    display: flex;
+    flex-direction: column;
+    grid-area: redes;
+  }
+  
+  .redes p {
+    text-align: justify;
+    color: aliceblue;
+    font-size: large;
+    margin-bottom: 0;
+  }
+  
+  .redes a {
+    background-color: rgba(240, 248, 255, 0.288);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2px;
+    margin-bottom: 3px;
+    width: 130px;
+    justify-content: center;
+  }
+  
+  .redes a img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .redes a p {
+    margin: 0;
+    padding-left: 0px;
+  }
+  
+.copy{
+    grid-area:copy;
+    display: flex;
+    justify-content: end;
+}
+
+  .copy p{
+    color: aliceblue;
+  }
+  

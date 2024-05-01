@@ -1,0 +1,168 @@
+/*media queries*/
+/*media queries*/
+
+@media (max-width: 1060px) and (min-width: 850px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .icono a img {
+        width: 20%;
+    }
+
+    .icono a h1 {
+        font-size: x-large;
+    }
+
+    .busqueda_marcas {
+        justify-content: center;
+    }
+
+    .busqueda {
+        margin-top: 100px;
+        margin-left: 30px;
+        width: 200px;
+    }
+
+    .marcas {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .busqueda input {
+        width: 130px;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 610px) {
+    header {
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .icono a img {
+        width: 100px;
+    }
+
+    .icono a h1 {
+        font-size: larger;
+        width: auto;
+        align-items: center;
+    }
+
+    .busqueda_marcas {
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 3%;
+    }
+
+    .busqueda {
+        margin-top: 90px;
+        margin-left: 10%;
+        height: 40px;
+        width: 180px;
+        margin-bottom: 1px;
+        align-items: center;
+    }
+
+    .marcas {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .busqueda input {
+        width: 130px;
+    }
+}
+
+@media (max-width: 610px) and (min-width: 480px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .icono {
+        position: absolute;
+        margin-left: 45%;
+        margin-top: -18%;
+    }
+
+    .icono a img {
+        width: 50px;
+    }
+
+    .icono a h1 {
+        font-size: large;
+        width: auto;
+        align-items: center;
+    }
+
+    .busqueda_marcas {
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 3%;
+    }
+
+    .busqueda {
+        margin-top: 90px;
+        margin-left: 10%;
+        height: 40px;
+        width: 180px;
+        margin-bottom: 1px;
+        align-items: center;
+    }
+
+    .marcas {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .busqueda input {
+        width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .icono {
+        position: absolute;
+        margin-left: 45%;
+        margin-top: -15%;
+    }
+
+    .icono a img {
+        width: 60px;
+    }
+
+    .icono a h1 {
+        font-size: medium;
+        width: auto;
+        align-items: center;
+    }
+
+    .busqueda_marcas {
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 3%;
+    }
+
+    .busqueda {
+        margin-top: 120px;
+        margin-left: 2px;
+        height: 30px;
+        width: 180px;
+        align-items: center;
+    }
+
+    .marcas {
+        visibility: hidden;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    .busqueda input {
+        width: 130px;
+    }
+}
