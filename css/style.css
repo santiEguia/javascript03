@@ -11,6 +11,8 @@ body {
   background-size: cover;
   min-height: 100vh;
   overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /*main*/
@@ -568,7 +570,7 @@ footer {
   text-align: start;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.603);
-  transition-duration: 0.5s;
+  transition: 0.5s;
 }
 .publicacion:hover {
   cursor: pointer;
