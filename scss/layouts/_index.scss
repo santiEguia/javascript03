@@ -1,67 +1,7 @@
  /*publicaciones*/
  /*publicaciones*/
- .presentacion {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-     gap: 30px;
-     height: auto;
-     margin-top: 20px;
-     margin-bottom: 50px;
-     background-color: rgba(0, 0, 0, 0.849);
-     padding: 10px;
-     grid-template-areas: "pimg pp";
- }
+ 
 
- .imgpres {
-     display: flex;
-     justify-content: center;
- }
-
- .imgpres img {
-     border: solid 2px rgba(255, 0, 0, 0.527);
-     border-radius: 2px;
-     overflow: hidden;
-     grid-area: pimg;
-     height: 300px;
-     object-position: center center;
- }
-
- .parpres {
-     display: flex;
-     justify-content: center;
-     color: white;
-     font-size: larger;
-     grid-area: pp;
- }
-
- @media (max-width: 850px) and (min-width: 480px) {
-     .presentacion {
-         grid-template-columns: 1fr;
-         grid-template-areas: "pimg" "pp";
-     }
- }
-
- @media (max-width: 480px) {
-     .presentacion {
-         grid-template-columns: 1fr;
-         grid-template-areas: "pimg" "pp";
-     }
-
-     .parpres {
-         font-size: small;
-     }
-
-     .imgpres img {
-         height: 200px;
-         object-fit: cover;
-     }
- }
-
- .epigrafe {
-     background-color: rgba(0, 0, 0, 0.849);
-     width: auto;
-     padding: 5px;
- }
 
  .publicaciones {
      display: grid;
@@ -81,7 +21,7 @@
  .publicacion {
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: end;
      border-radius: 5px;
      border: solid 1px;
      border-color: rgba(0, 0, 0, 0.582);
@@ -102,11 +42,11 @@
          height: 400px;
 
          .descrip {
-             display:flex;
+             visibility: visible;
          }
 
          .publ_general {
-             margin-top: 0px;
+             margin-bottom: 0px;
          }
 
          .publ_general img {
@@ -120,7 +60,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin-top: 0px;
+     margin-bottom: -100px;
      transition: 0.5s;
  }
 
@@ -129,10 +69,11 @@
  }
 
  .descrip {
-     display:none;
+     visibility: hidden;
      padding: 20px;
      font-size: small;
      transition: 0.5s;
+     margin-bottom: 0;
 
  }
 
