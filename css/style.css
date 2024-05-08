@@ -33,7 +33,7 @@ header {
   display: flex;
   height: 170px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7411764706);
+  background-color: rgba(0, 0, 0, 0.849);
   justify-content: space-between;
   align-items: center;
 }
@@ -151,7 +151,7 @@ header {
   margin-right: 20px;
   margin-top: 30px;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.253);
+  background-color: rgba(92, 92, 92, 0.616);
   width: 220px;
   height: 20px;
 }
@@ -177,8 +177,8 @@ header {
 .titulo {
   width: auto;
   text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.678);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.849);
   padding: 5px;
 }
 
@@ -215,7 +215,7 @@ footer {
 }
 
 .redes a {
-  background-color: rgba(240, 248, 255, 0.288);
+  background-color: rgba(92, 92, 92, 0.616);
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -258,7 +258,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4862745098);
+  background-color: rgba(0, 0, 0, 0.849);
 }
 
 .acceder form input {
@@ -268,8 +268,7 @@ footer {
 }
 
 .acceder form p a {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.678);
+  color: aliceblue;
   padding: 5px;
 }
 
@@ -284,7 +283,7 @@ footer {
 }
 
 .contacto ul {
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.849);
   border-radius: 10px;
   list-style: none;
   display: flex;
@@ -316,7 +315,7 @@ footer {
 }
 .contacto ul li a h2:hover {
   background-color: rgba(92, 92, 92, 0);
-  color: rgb(255, 0, 0);
+  color: rgba(255, 0, 0, 0.404);
   border: solid 0.5px rgba(92, 92, 92, 0.616);
 }
 
@@ -355,25 +354,25 @@ footer {
   justify-items: center;
 }
 
-.publicacion img {
-  width: 230px;
-  object-fit: cover;
-}
-
 .publicacion {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  border-radius: 5px;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   border: solid 1px;
-  border-color: rgba(0, 0, 0, 0.582);
+  border-color: rgba(0, 0, 0, 0.849);
   width: 300px;
   height: 350px;
   overflow: hidden;
   text-align: start;
-  align-items: center;
   background-color: rgba(255, 255, 255, 0.603);
   transition: 0.5s;
+}
+.publicacion img {
+  width: 160px;
+  object-fit: cover;
 }
 .publicacion:hover {
   cursor: pointer;
@@ -381,25 +380,16 @@ footer {
   border: none;
   background-color: rgb(228, 228, 228);
   transform: scale(1.05);
-  height: 400px;
-}
-.publicacion:hover .descrip {
-  visibility: visible;
-}
-.publicacion:hover .publ_general {
-  margin-bottom: 0px;
-}
-.publicacion:hover .publ_general img {
-  width: 160px;
-  object-fit: cover;
 }
 
 .publ_general {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: -100px;
   transition: 0.5s;
+  height: 200px;
+  margin-bottom: 30px;
+  justify-content: start;
 }
 
 .publ_general img {
@@ -407,11 +397,8 @@ footer {
 }
 
 .descrip {
-  visibility: hidden;
   padding: 20px;
   font-size: small;
-  transition: 0.5s;
-  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -439,7 +426,7 @@ footer {
 }
 
 .imgpres img {
-  border: solid 2px rgba(255, 0, 0, 0.527);
+  border: solid 2px rgba(255, 0, 0, 0.404);
   border-radius: 2px;
   overflow: hidden;
   grid-area: pimg;
@@ -478,26 +465,26 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: white;
   grid-template-areas: "infoc musculacion" "boxeo infob" "infop natacion";
   gap: 10px;
 }
 
 .infoc {
   grid-area: infoc;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.849);
   padding: 20px;
 }
 
 .infop {
   grid-area: infop;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.849);
   padding: 20px;
 }
 
 .infob {
   grid-area: infob;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.849);
   padding: 20px;
 }
 
@@ -530,7 +517,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: white;
     grid-template-areas: "infoc" "musculacion" "infob" "boxeo " "infop" "natacion";
     gap: 10px;
   }
@@ -548,7 +535,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4862745098);
+  background-color: rgba(0, 0, 0, 0.849);
 }
 
 .registro form input {
@@ -559,7 +546,7 @@ footer {
 
 .registro form p a {
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.849);
   padding: 5px;
 }
 

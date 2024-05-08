@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4862745098);
+    background-color: $darkColor;
   }
   
   .registro form input {
@@ -20,7 +20,7 @@
   
   .registro form p a {
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: $darkColor;
     padding: 5px;
   }
   

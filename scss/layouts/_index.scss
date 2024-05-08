@@ -1,7 +1,18 @@
  /*publicaciones*/
  /*publicaciones*/
  
+ @mixin cardflex($direction, $justf, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justf;
+    align-items: $align;
+}
 
+@mixin cardgrid($frs, $gap){
+    display: grid;
+    grid-template-columns: $frs;
+    gap: $gap;
+}
 
  .publicaciones {
      display: grid;
@@ -13,55 +24,41 @@
      justify-items: center;
  }
 
- .publicacion img {
-     width: 230px;
-     object-fit: cover;
- }
-
  .publicacion {
-     display: flex;
-     flex-direction: column;
-     justify-content: end;
-     border-radius: 5px;
+    @include cardflex(column,end,center);
+     border-top-right-radius: 20px;
+     border-bottom-left-radius: 20px;
      border: solid 1px;
-     border-color: rgba(0, 0, 0, 0.582);
+     border-color: $darkColor;
      width: 300px;
      height: 350px;
      overflow: hidden;
      text-align: start;
-     align-items: center;
-     background-color: rgba(255, 255, 255, 0.603);
+     background-color: $lightColor;
      transition: 0.5s;
+     img {
+        width: 160px;
+        object-fit: cover;
+    }
 
      &:hover {
          cursor: pointer;
-         box-shadow: 0px 0px 5px 5px rgba(61, 61, 61, 0.747);
+         box-shadow: 0px 0px 5px 5px $ShadowColor;
          border: none;
          background-color: rgb(228, 228, 228);
          transform: scale(1.05);
-         height: 400px;
-
-         .descrip {
-             visibility: visible;
-         }
-
-         .publ_general {
-             margin-bottom: 0px;
-         }
-
-         .publ_general img {
-             width: 160px;
-             object-fit: cover;
-         }
      }
  }
+
 
  .publ_general {
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin-bottom: -100px;
      transition: 0.5s;
+     height: 200px;
+     margin-bottom: 30px;
+     justify-content: start;
  }
 
  .publ_general img {
@@ -69,12 +66,8 @@
  }
 
  .descrip {
-     visibility: hidden;
      padding: 20px;
      font-size: small;
-     transition: 0.5s;
-     margin-bottom: 0;
-
  }
 
  @media (max-width: 768px) {
@@ -82,3 +75,4 @@
          grid-template-columns: 1fr;
      }
  }
+
