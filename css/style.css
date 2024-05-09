@@ -749,6 +749,9 @@ footer {
   .linksRedes {
     flex-direction: column;
   }
+  .logof {
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
