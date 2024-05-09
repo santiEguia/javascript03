@@ -191,31 +191,48 @@ header {
 /*footer*/
 /*footer*/
 footer {
-  height: 100px;
+  height: 150px;
   background-color: rgba(255, 0, 0, 0.404);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px 10px 10px 10px;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-template-areas: "redes . copy";
+  grid-template-areas: "logo redes" "copy copy";
   margin-top: 15vh;
+}
+
+.logof {
+  display: flex;
+  justify-content: center;
+}
+.logof img {
+  width: 100px;
+  grid-area: logo;
+}
+.logof a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
 }
 
 .redes {
   display: flex;
   flex-direction: column;
   grid-area: redes;
+  align-items: center;
 }
-
 .redes p {
   text-align: justify;
   color: aliceblue;
   font-size: large;
   margin-bottom: 0;
+  text-decoration: underline;
+  font-size: larger;
+  transition: 0.2s;
 }
-
 .redes a {
-  background-color: rgba(92, 92, 92, 0.616);
+  background-color: rgba(0, 0, 0, 0.849);
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -225,25 +242,35 @@ footer {
   width: 130px;
   justify-content: center;
 }
-
 .redes a img {
   width: 20px;
   height: 20px;
 }
-
 .redes a p {
   margin: 0;
   padding-left: 0px;
 }
 
+.linksRedes {
+  display: flex;
+  margin-top: 10px;
+}
+.linksRedes a {
+  margin-left: 5px;
+}
+.linksRedes a p:hover {
+  color: red;
+}
+
 .copy {
   grid-area: copy;
   display: flex;
-  justify-content: end;
-}
-
-.copy p {
-  color: aliceblue;
+  justify-content: center;
+  background-color: red;
+  height: 40px;
+  color: white;
+  margin: 0;
+  text-align: center;
 }
 
 /*layouts*/
@@ -315,7 +342,7 @@ footer {
 }
 .contacto ul li a h2:hover {
   background-color: rgba(92, 92, 92, 0);
-  color: rgba(255, 0, 0, 0.404);
+  color: red;
   border: solid 0.5px rgba(92, 92, 92, 0.616);
 }
 
@@ -344,6 +371,10 @@ footer {
 }
 /*publicaciones*/
 /*publicaciones*/
+.epigrafe {
+  background-color: rgba(0, 0, 0, 0.849);
+}
+
 .publicaciones {
   display: grid;
   padding: 20px;
@@ -364,15 +395,11 @@ footer {
   border: solid 1px;
   border-color: rgba(0, 0, 0, 0.849);
   width: 300px;
-  height: 350px;
+  height: auto;
   overflow: hidden;
   text-align: start;
   background-color: rgba(255, 255, 255, 0.603);
   transition: 0.5s;
-}
-.publicacion img {
-  width: 160px;
-  object-fit: cover;
 }
 .publicacion:hover {
   cursor: pointer;
@@ -381,6 +408,21 @@ footer {
   background-color: rgb(228, 228, 228);
   transform: scale(1.05);
 }
+.publicacion button {
+  width: 100%;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.849);
+  border-bottom-left-radius: 20px;
+}
+.publicacion button img {
+  width: 40px;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+.publicacion button:hover img {
+  transform: scale(1.1);
+  translate: 100%;
+}
 
 .publ_general {
   display: flex;
@@ -388,12 +430,19 @@ footer {
   align-items: center;
   transition: 0.5s;
   height: 200px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   justify-content: start;
 }
-
 .publ_general img {
+  height: 120px;
   transition: 0.5s;
+  margin-bottom: 20px;
+}
+.publ_general p {
+  display: flex;
+  width: 250px;
+  text-align: center;
+  justify-content: center;
 }
 
 .descrip {
@@ -652,6 +701,9 @@ footer {
   .busqueda input {
     width: 130px;
   }
+  .linksRedes {
+    flex-direction: column;
+  }
 }
 @media (max-width: 480px) {
   header {
@@ -693,6 +745,9 @@ footer {
   }
   .busqueda input {
     width: 130px;
+  }
+  .linksRedes {
+    flex-direction: column;
   }
 }
 

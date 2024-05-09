@@ -1,59 +1,98 @@
   /*footer*/
   /*footer*/
-  
+
   footer {
-    height: 100px;
+    height: 150px;
     background-color: $mainColor;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px 10px 10px 10px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    grid-template-areas: "redes . copy";
+    grid-template-areas: "logo redes"
+      "copy copy";
     margin-top: 15vh;
   }
-  
+
+  .logof {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100px;
+      grid-area: logo;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: x-large;
+    }
+  }
+
   .redes {
     display: flex;
     flex-direction: column;
     grid-area: redes;
-  }
-  
-  .redes p {
-    text-align: justify;
-    color: aliceblue;
-    font-size: large;
-    margin-bottom: 0;
-  }
-  
-  .redes a {
-    background-color: $greyColor;
-    display: flex;
     align-items: center;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 2px;
-    margin-bottom: 3px;
-    width: 130px;
-    justify-content: center;
-  }
-  
-  .redes a img {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .redes a p {
-    margin: 0;
-    padding-left: 0px;
-  }
-  
-.copy{
-    grid-area:copy;
-    display: flex;
-    justify-content: end;
-}
 
-  .copy p{
-    color: aliceblue;
+    p {
+      text-align: justify;
+      color: aliceblue;
+      font-size: large;
+      margin-bottom: 0;
+      text-decoration: underline;
+      font-size: larger;
+      transition: 0.2s;
+    }
+
+    a {
+      background-color: $darkColor;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      text-decoration: none;
+      padding: 2px;
+      margin-bottom: 3px;
+      width: 130px;
+      justify-content: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      p {
+        margin: 0;
+        padding-left: 0px;
+      }
+    }
+
+
   }
-  
+
+  .linksRedes {
+    display: flex;
+    margin-top: 10px;
+
+    a {
+      margin-left: 5px;
+
+      p {
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .copy {
+    grid-area: copy;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 40px;
+    color: white;
+    margin: 0;
+    text-align: center;
+  }

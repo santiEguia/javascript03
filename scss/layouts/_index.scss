@@ -1,18 +1,22 @@
  /*publicaciones*/
  /*publicaciones*/
- 
- @mixin cardflex($direction, $justf, $align){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justf;
-    align-items: $align;
-}
 
-@mixin cardgrid($frs, $gap){
-    display: grid;
-    grid-template-columns: $frs;
-    gap: $gap;
-}
+ @mixin cardflex($direction, $justf, $align) {
+     display: flex;
+     flex-direction: $direction;
+     justify-content: $justf;
+     align-items: $align;
+ }
+
+ @mixin cardgrid($frs, $gap) {
+     display: grid;
+     grid-template-columns: $frs;
+     gap: $gap;
+ }
+
+ .epigrafe {
+     background-color: $darkColor;
+ }
 
  .publicaciones {
      display: grid;
@@ -25,21 +29,17 @@
  }
 
  .publicacion {
-    @include cardflex(column,end,center);
+     @include cardflex(column, end, center);
      border-top-right-radius: 20px;
      border-bottom-left-radius: 20px;
      border: solid 1px;
      border-color: $darkColor;
      width: 300px;
-     height: 350px;
+     height: auto;
      overflow: hidden;
      text-align: start;
      background-color: $lightColor;
      transition: 0.5s;
-     img {
-        width: 160px;
-        object-fit: cover;
-    }
 
      &:hover {
          cursor: pointer;
@@ -48,6 +48,24 @@
          background-color: rgb(228, 228, 228);
          transform: scale(1.05);
      }
+     button{
+        width: 100%;
+        border-radius: 0px;
+        background-color: $darkColor;
+        border-bottom-left-radius: 20px;
+        img{
+            width: 40px;
+            margin-left: 5px;
+            transition: 0.2s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+                translate: 100%;
+            }
+        }
+     }
+
  }
 
 
@@ -57,12 +75,19 @@
      align-items: center;
      transition: 0.5s;
      height: 200px;
-     margin-bottom: 30px;
+     margin-top: 30px;
      justify-content: start;
- }
-
- .publ_general img {
-     transition: 0.5s;
+     img{
+        height: 120px;
+        transition: 0.5s;
+        margin-bottom: 20px;
+     }
+     p{
+        display: flex;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+     }
  }
 
  .descrip {
@@ -75,4 +100,3 @@
          grid-template-columns: 1fr;
      }
  }
-

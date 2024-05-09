@@ -124,6 +124,12 @@
     .busqueda input {
         width: 130px;
     }
+
+    .linksRedes{
+        flex-direction: column;
+    }
+
+    
 }
 
 @media (max-width: 480px) {
@@ -173,5 +179,9 @@
 
     .busqueda input {
         width: 130px;
+    }
+
+    .linksRedes{
+        flex-direction: column;
     }
 }
