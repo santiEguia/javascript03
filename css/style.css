@@ -80,10 +80,8 @@ header {
   transition-duration: 0.5s;
 }
 .icono a img:hover {
-  box-shadow: inset 0px 0px 20px 0px rgb(255, 255, 255);
-  padding: 2px;
   border-radius: 100px;
-  margin-top: -15px;
+  transform: scale(0.9);
 }
 
 .icono h1 {
@@ -207,6 +205,10 @@ footer {
 .logof img {
   width: 100px;
   grid-area: logo;
+  transition: 0.2s;
+}
+.logof img:hover {
+  transform: scale(0.9);
 }
 .logof a {
   display: flex;
@@ -214,6 +216,14 @@ footer {
   text-decoration: none;
   color: white;
   font-size: x-large;
+}
+
+.supl {
+  margin-right: 5px;
+}
+
+.ar {
+  margin-left: 5px;
 }
 
 .redes {
@@ -232,19 +242,22 @@ footer {
   transition: 0.2s;
 }
 .redes a {
-  background-color: rgba(0, 0, 0, 0.849);
   display: flex;
   align-items: center;
-  border-radius: 5px;
   text-decoration: none;
   padding: 2px;
   margin-bottom: 3px;
   width: 130px;
   justify-content: center;
+  transition: 0.2s;
+}
+.redes a:hover {
+  transform: scale(1.1);
 }
 .redes a img {
   width: 20px;
   height: 20px;
+  margin-right: 5px;
 }
 .redes a p {
   margin: 0;
@@ -259,18 +272,19 @@ footer {
   margin-left: 5px;
 }
 .linksRedes a p:hover {
-  color: red;
+  color: black;
 }
 
 .copy {
   grid-area: copy;
   display: flex;
   justify-content: center;
-  background-color: red;
-  height: 40px;
+  background-color: rgba(255, 0, 0, 0.404);
+  height: 100%;
   color: white;
   margin: 0;
   text-align: center;
+  font-size: larger;
 }
 
 /*layouts*/
@@ -398,7 +412,7 @@ footer {
   height: auto;
   overflow: hidden;
   text-align: start;
-  background-color: rgba(255, 255, 255, 0.603);
+  background-color: rgba(255, 255, 255, 0.596);
   transition: 0.5s;
 }
 .publicacion:hover {
@@ -417,7 +431,7 @@ footer {
 .publicacion button img {
   width: 40px;
   margin-left: 5px;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .publicacion button:hover img {
   transform: scale(1.1);
@@ -579,20 +593,23 @@ footer {
 .registro {
   margin-bottom: 20px;
 }
-
 .registro form {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.849);
 }
-
+.registro form label {
+  color: white;
+  font-size: larger;
+  text-decoration: underline;
+  margin-top: 5px;
+}
 .registro form input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
 }
-
 .registro form p a {
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.849);
@@ -751,6 +768,9 @@ footer {
   }
   .logof {
     margin-left: 10px;
+  }
+  .copy {
+    font-size: medium;
   }
 }
 

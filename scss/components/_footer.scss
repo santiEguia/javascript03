@@ -1,98 +1,115 @@
-  /*footer*/
-  /*footer*/
+ /*footer*/
+ /*footer*/
 
-  footer {
-    height: 150px;
-    background-color: $mainColor;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-template-areas: "logo redes"
-      "copy copy";
-    margin-top: 15vh;
-  }
+ footer {
+   height: 150px;
+   background-color: $mainColor;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   grid-template-areas: "logo redes"
+     "copy copy";
+   margin-top: 15vh;
+ }
 
-  .logof {
-    display: flex;
-    justify-content: center;
+ .logof {
+   display: flex;
+   justify-content: center;
 
-    img {
-      width: 100px;
-      grid-area: logo;
-    }
+   img {
+     width: 100px;
+     grid-area: logo;
+     transition: 0.2s;
 
-    a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: white;
-      font-size: x-large;
-    }
-  }
+     &:hover {
+       transform: scale(0.9);
+     }
+   }
 
-  .redes {
-    display: flex;
-    flex-direction: column;
-    grid-area: redes;
-    align-items: center;
+   a {
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     color: white;
+     font-size: x-large;
+   }
+ }
 
-    p {
-      text-align: justify;
-      color: aliceblue;
-      font-size: large;
-      margin-bottom: 0;
-      text-decoration: underline;
-      font-size: larger;
-      transition: 0.2s;
-    }
+ .supl {
+   margin-right: 5px;
+ }
 
-    a {
-      background-color: $darkColor;
-      display: flex;
-      align-items: center;
-      border-radius: 5px;
-      text-decoration: none;
-      padding: 2px;
-      margin-bottom: 3px;
-      width: 130px;
-      justify-content: center;
+ .ar {
+   margin-left: 5px;
+ }
 
-      img {
-        width: 20px;
-        height: 20px;
-      }
+ .redes {
+   display: flex;
+   flex-direction: column;
+   grid-area: redes;
+   align-items: center;
 
-      p {
-        margin: 0;
-        padding-left: 0px;
-      }
-    }
+   p {
+     text-align: justify;
+     color: aliceblue;
+     font-size: large;
+     margin-bottom: 0;
+     text-decoration: underline;
+     font-size: larger;
+     transition: 0.2s;
+   }
+
+   a {
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     padding: 2px;
+     margin-bottom: 3px;
+     width: 130px;
+     justify-content: center;
+     transition: 0.2s;
+     &:hover{
+      transform: scale(1.1);
+     }
+
+     img {
+       width: 20px;
+       height: 20px;
+       margin-right: 5px;
+     }
+
+     p {
+       margin: 0;
+       padding-left: 0px;
+     }
+   }
 
 
-  }
+ }
 
-  .linksRedes {
-    display: flex;
-    margin-top: 10px;
+ .linksRedes {
+   display: flex;
+   margin-top: 10px;
 
-    a {
-      margin-left: 5px;
+   a {
+     margin-left: 5px;
 
-      p {
-        &:hover {
-          color: red;
-        }
-      }
-    }
-  }
+     p {
+       &:hover {
+         color: black;
+       }
+     }
+   }
+ }
 
-  .copy {
-    grid-area: copy;
-    display: flex;
-    justify-content: center;
-    background-color: red;
-    height: 40px;
-    color: white;
-    margin: 0;
-    text-align: center;
-  }
+ .copy {
+   grid-area: copy;
+   display: flex;
+   justify-content: center;
+   background-color: $mainColor;
+   height: 100%;
+   color: white;
+   margin: 0;
+   text-align: center;
+   font-size: larger;
+ }

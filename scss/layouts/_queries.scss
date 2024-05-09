@@ -128,8 +128,6 @@
     .linksRedes{
         flex-direction: column;
     }
-
-    
 }
 
 @media (max-width: 480px) {
@@ -187,5 +185,9 @@
 
     .logof{
         margin-left: 10px;
+    }
+
+    .copy{
+        font-size: medium;
     }
 }
