@@ -1,0 +1,13 @@
+
+@mixin cardflex($direction, $justf, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justf;
+    align-items: $align;
+}
+
+@mixin cardgrid($frs, $gap) {
+    display: grid;
+    grid-template-columns: $frs;
+    gap: $gap;
+}

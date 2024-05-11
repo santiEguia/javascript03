@@ -203,7 +203,7 @@ footer {
   justify-content: center;
 }
 .logof img {
-  width: 100px;
+  width: 80px;
   grid-area: logo;
   transition: 0.2s;
 }
@@ -443,7 +443,7 @@ footer {
   flex-direction: column;
   align-items: center;
   transition: 0.5s;
-  height: 200px;
+  height: auto;
   margin-top: 30px;
   justify-content: start;
 }
@@ -462,6 +462,7 @@ footer {
 .descrip {
   padding: 20px;
   font-size: small;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

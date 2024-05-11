@@ -1,18 +1,6 @@
  /*publicaciones*/
  /*publicaciones*/
 
- @mixin cardflex($direction, $justf, $align) {
-     display: flex;
-     flex-direction: $direction;
-     justify-content: $justf;
-     align-items: $align;
- }
-
- @mixin cardgrid($frs, $gap) {
-     display: grid;
-     grid-template-columns: $frs;
-     gap: $gap;
- }
 
  .epigrafe {
      background-color: $darkColor;
@@ -74,7 +62,7 @@
      flex-direction: column;
      align-items: center;
      transition: 0.5s;
-     height: 200px;
+     height: auto;
      margin-top: 30px;
      justify-content: start;
      img{
@@ -93,6 +81,7 @@
  .descrip {
      padding: 20px;
      font-size: small;
+     margin-bottom: 0;
  }
 
  @media (max-width: 768px) {
