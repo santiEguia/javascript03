@@ -35,28 +35,7 @@
     grid-area: pp;
 }
 
-@media (max-width: 850px) and (min-width: 480px) {
-    .presentacion {
-        grid-template-columns: 1fr;
-        grid-template-areas: "pimg" "pp";
-    }
-}
 
-@media (max-width: 480px) {
-    .presentacion {
-        grid-template-columns: 1fr;
-        grid-template-areas: "pimg" "pp";
-    }
-
-    .parpres {
-        font-size: small;
-    }
-
-    .imgpres img {
-        height: 200px;
-        object-fit: cover;
-    }
-}
 
 .infoProductos {
     display: grid;
