@@ -1,6 +1,8 @@
 /*media queries*/
 /*media queries*/
 
+//HEADER--HEADER--HEADER--HEADER--HEADER
+//HEADER--HEADER--HEADER--HEADER--HEADER
 @media (max-width: 1060px) and (min-width: 850px) {
     header {
         justify-content: space-between;
@@ -75,35 +77,6 @@
     }
 }
 
-@media (max-width: 850px) and (min-width: 480px) {
-    .presentacion {
-        grid-template-columns: 1fr;
-        grid-template-areas: "pimg" "pp";
-    }
-}
-
-@media (max-width: 480px) {
-    .presentacion {
-        grid-template-columns: 1fr;
-        grid-template-areas: "pimg" "pp";
-    }
-
-    .parpres {
-        font-size: small;
-    }
-
-    .imgpres img {
-        height: 200px;
-        object-fit: cover;
-    }
-}
-
-@media (max-width: 768px) {
-    .publicaciones {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (max-width: 610px) and (min-width: 480px) {
     header {
         justify-content: space-between;
@@ -159,27 +132,6 @@
     }
 }
 
-@media (max-width: 550px) {
-    .contacto ul {
-        width: 300px;
-    }
-
-    .contacto ul li {
-        display: flex;
-        justify-content: start;
-    }
-
-    .contacto ul li a img {
-        width: 50px;
-        height: 50px;
-        margin-right: 10px;
-    }
-
-    .contacto ul li a h2 {
-        font-size: medium;
-    }
-}
-
 @media (max-width: 480px) {
     header {
         justify-content: space-between;
@@ -228,7 +180,7 @@
     .busqueda input {
         width: 130px;
     }
-
+//FOOTER-FOOTER-FOOTER-FOOTER-FOOTER
     .linksRedes{
         flex-direction: column;
     }
@@ -241,4 +193,77 @@
         font-size: medium;
     }
 }
+
+
+//INFO-INFO-INFO-INFO-INFO-INFO-INFO
+//INFO-INFO-INFO-INFO-INFO-INFO-INFO
+@media (max-width: 850px) and (min-width: 480px) {
+    .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-areas: "pimg" "pp";
+    }
+}
+
+@media (max-width: 600px) {
+    .infoProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        color: white;
+        grid-template-areas: "infoc" "musculacion" "infob" "boxeo " "infop" "natacion";
+        gap: 10px;
+    }
+
+    .infoc .infob .infop p {
+        font-size: small;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-areas: "pimg" "pp";
+    }
+
+    .parpres {
+        font-size: small;
+    }
+
+    .imgpres img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+//INDEX-INDEX-INDEX-INDEX-INDEX-INDEX
+//INDEX-INDEX-INDEX-INDEX-INDEX-INDEX
+@media (max-width: 768px) {
+    .publicaciones {
+        grid-template-columns: 1fr;
+    }
+}
+
+//CONTACTO-CONTACTO-CONTACTO-CONTACTO
+//CONTACTO-CONTACTO-CONTACTO-CONTACTO
+@media (max-width: 550px) {
+    .contacto ul {
+        width: 300px;
+    }
+
+    .contacto ul li {
+        display: flex;
+        justify-content: start;
+    }
+
+    .contacto ul li a img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .contacto ul li a h2 {
+        font-size: medium;
+    }
+}
+
 

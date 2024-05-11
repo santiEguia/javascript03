@@ -88,17 +88,3 @@
     grid-area: natacion;
 }
 
-@media (max-width: 600px) {
-    .infoProductos {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        color: white;
-        grid-template-areas: "infoc" "musculacion" "infob" "boxeo " "infop" "natacion";
-        gap: 10px;
-    }
-
-    .infoc .infob .infop p {
-        font-size: small;
-    }
-}
