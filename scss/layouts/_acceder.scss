@@ -11,12 +11,28 @@
   flex-direction: column;
   align-items: center;
   background-color: $darkColor;
+  label{
+    color: white;
+    font-size: x-large;
+    text-decoration: underline;
+    margin-top: 5px;
+  }
 }
 
 .acceder form input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
+  border: solid 3px red;
+}
+
+.submit{
+  transition: 0.3s;
+  &:hover{
+    color: white;
+    background-color: red;
+    transform: scale(1.05);
+  }
 }
 
 .acceder form p a {

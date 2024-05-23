@@ -301,11 +301,27 @@ footer {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.849);
 }
+.acceder form label {
+  color: white;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-top: 5px;
+}
 
 .acceder form input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
+  border: solid 3px red;
+}
+
+.submit {
+  transition: 0.3s;
+}
+.submit:hover {
+  color: white;
+  background-color: red;
+  transform: scale(1.05);
 }
 
 .acceder form p a {
@@ -548,7 +564,7 @@ footer {
 }
 .registro form label {
   color: white;
-  font-size: larger;
+  font-size: x-large;
   text-decoration: underline;
   margin-top: 5px;
 }
@@ -556,6 +572,15 @@ footer {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
+  border: solid 3px red;
+}
+.registro form .submit {
+  transition: 0.3s;
+}
+.registro form .submit:hover {
+  color: white;
+  background-color: red;
+  transform: scale(1.05);
 }
 .registro form p a {
   color: rgb(255, 255, 255);
