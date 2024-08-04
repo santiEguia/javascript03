@@ -19,9 +19,12 @@
         padding: 5px;
         border-radius: 5px;
         border: solid 3px red;
+        background-color: transparent;
+        color:white;
       }
       .submit{
         transition: 0.3s;
+        color: red;
         &:hover{
           color: white;
           background-color: red;

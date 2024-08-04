@@ -51,12 +51,12 @@
     <header>
         <nav class="menu">
 
-            <a href="./pages/registrarse.html">
+            <a href="./pages/registrarse.html" id="registrarseHeader">
                 <img src="./img/registro.png" alt="register" class="navimg">
                 <li>Registrarse</li>
             </a>
 
-            <a href="./pages/acceder.html">
+            <a href="./pages/acceder.html" id="accederHeader">
                 <img src="./img/ingresar.png" alt="login" class="navimg">
                 <li>Acceder</li>
             </a>
@@ -160,272 +160,38 @@
 
         <h1 class="titulo">PRODUCTOS EN STOCK</h1>
 
-        <section class="publicaciones">
 
+        <seccion class="botonesCompras">
+            <div class="botoneraFiltros">
+                <button class="botonesFiltro pulsado" id="todosLosProductos">Todos Los Productos</button>
+                <button class="botonesFiltro" id="proteina">Proteinas</button>
+                <button class="botonesFiltro" id="creatina">Creatinas</button>
+                <button class="botonesFiltro" id="otros">Otros</button>
+
+            </div>
+            <div>
+                <a class="carritoIcon" href="./pages/carrito.html"><i class="bi bi-cart4"></i>Carrito</a>
+            </div>
+        </seccion>
+
+        <template>
             <div class="publicacion">
                 <div class="publ_general">
-                    <img src="./img/productos/ena-whey.png" alt="Proteina ena">
-                    <p> PROTEINA-ENA</p>
-                    <p> $25.300</p>
+                    <img src="./img/productos/ena-whey.png" alt="Proteina ena" id="fotoProducto">
+                    <h5 id="nombreProducto"> PROTEINA-ENA</h5>
+                    <small id="precioProducto"> $25.300</small>
                 </div>
-                <p class="descrip">Suplemento proteico fundamental para el crecimiento muscular, recuperación
-                    post-entrenamiento y apoyo a una dieta equilibrada y activa.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
+                <button type="button" class="btn btn-outline-danger botonComprar">Añadir al carrito <img src="img/carrito.png"
                         alt="carrito"></button>
             </div>
+        </template>
 
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/ena-bcaa.png" alt="bcaa ena">
-                    <p> BCAA-ENA</p>
-                    <p> $17.500</p>
-                </div>
-                <p class="descrip">Los BCAA son aminoácidos de cadena ramificada esenciales para el crecimiento muscular
-                    y la recuperación después del ejercicio intenso.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
+        <section id="publicacionesContainer" class="publicaciones">
 
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/barritas.png" alt="barra proteica iron bar">
-                    <p> BARRAS PROTEICAS IRON BAR x 20u</p>
-                    <p> $7.000</p>
-                </div>
-                <p class="descrip">
-                    Snacks con alto contenido proteico para nutrición deportiva conveniente.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
+            
 
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/ena-creatina.png" alt="cretina ena">
-                    <p> CREATINA-ENA</p>
-                    <p> $28.100</p>
-                </div>
-                <p class="descrip">La creatina es un suplemento popular para mejorar el rendimiento deportivo, aumentar
-                    la fuerza y la masa muscular.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
+        </seccion>
 
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/ena-amino.png" alt="amino full ena">
-                    <p> AMINO-FULL-ENA</p>
-                    <p> $12.640</p>
-                </div>
-                <p class="descrip">Suplemento con aminoácidos para apoyar la recuperación muscular.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/ena-glutamina.png" alt="glutamina micronizada ena">
-                    <p>GLUTAMINA MICRONIZADA-ENA</p>
-                    <p> $23.120</p>
-                </div>
-                <p class="descrip">Sirve para la recuperación y apoyo muscular post-entrenamiento.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/ena-pre.png" alt="pre war ena">
-                    <p>PRE WAR-ENA</p>
-                    <p> $22.040</p>
-                </div>
-                <p class="descrip">Suplemento previo al entrenamiento para mejorar energía y rendimiento.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/nutrex-anabol.png" alt="anabol nutrex">
-                    <p>ANABOL-NUTREX</p>
-                    <p> $80.500</p>
-                </div>
-                <p class="descrip">Suplemento para aumentar la masa muscular y mejorar el rendimiento.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/nutrex-caffeine.png" alt="caffeine nutrex">
-                    <p>CAFFEINE-NUTREX</p>
-                    <p> $89.900</p>
-                </div>
-                <p class="descrip">Estimulante natural para aumentar energía y mejorar enfoque mental.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/nutrex-isofit.png" alt="isofit nutrex">
-                    <p>ISOFIT-NUTREX</p>
-                    <p> $419.999</p>
-                </div>
-                <p class="descrip">Suplemento de proteína de suero de alta calidad para musculatura y recuperación
-                    óptimas.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/nutrex-lipo.png" alt="lipo 6 ultra">
-                    <p>LIPO 6 ULTRA-NUTREX</p>
-                    <p> $33.400</p>
-                </div>
-                <p class="descrip">Suplemento termogénico para aumentar la quema de grasa y energía.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/nutrex-mass.png" alt="mass infusion nutrex">
-                    <p>MASS INFUSION-NUTREX</p>
-                    <p> $49.670</p>
-                </div>
-                <p class="descrip">Suplemento para ganar masa muscular y aumentar el tamaño.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/nutrex-outlift.png" alt="outlift nutrex">
-                    <p>OUTLIFT-NUTREX</p>
-                    <p> $354.999</p>
-                </div>
-                <p class="descrip">Pre-entrenamiento para aumentar energía, fuerza y resistencia durante el ejercicio.
-                </p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/on-casein.png" alt="caseina on">
-                    <p>CASEINA-ON</p>
-                    <p> $28.100</p>
-                </div>
-                <p class="descrip">Proteína de digestión lenta para apoyar la recuperación muscular durante la noche.
-                </p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/on-hwhey.png" alt="hydro whey on">
-                    <p> HYDRO WHEY-ON</p>
-                    <p> $250.299</p>
-                </div>
-                <p class="descrip">Proteína de suero de rápida absorción para apoyar la recuperación muscular después
-                    del entrenamiento.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/on-whey.png" alt="whey protein on">
-                    <p> WHEY PROTEIN-ON</p>
-                    <p> $52.500</p>
-                </div>
-                <p class="descrip">
-                    Proteína de suero de leche para el crecimiento y recuperación muscular.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/star-mass.png" alt="mutant mass star nutrition">
-                    <p> MUTANT MASS-STAR NUTRITION</p>
-                    <p> $24.984</p>
-                </div>
-                <p class="descrip">Suplemento para aumentar masa muscular y ganar peso.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/star-nitro.jpg" alt="nitro whey star nutrition">
-                    <p>NITRO WHEY-STAR NUTRITION</p>
-                    <p> $37.160</p>
-                </div>
-                <p class="descrip">Suplemento de proteína de suero para apoyar la recuperación muscular y el
-                    crecimiento.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/star-pre1.png" alt="ripped star nutrition">
-                    <p> PRE ENTRENO RIPPED-STAR NUTRITION</p>
-                    <p> $32.389</p>
-                </div>
-                <p class="descrip">Suplemento pre-entrenamiento diseñado para mejorar la energía, el enfoque y la quema
-                    de grasa.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/star-pre2.png" alt="v8 star nutrition">
-                    <p> PRE ENTRENO V8-STAR NUTRITION</p>
-                    <p> $23.700</p>
-                </div>
-                <p class="descrip">
-                    Suplemento pre-entrenamiento para mejorar el rendimiento, energía y enfoque durante el ejercicio.
-                </p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                        alt="carrito"></button>
-            </div>
-
-            <div class="publicacion">
-                <div class="publ_general">
-                    <img src="./img/productos/star-whey.png" alt="whey protein star nutrition">
-                    <p> WHEY PROTEIN-STAR NUTRITION</p>
-                    <p> $28.355</p>
-                </div>
-                <p class="descrip">Proteína de suero para promover el crecimiento y la recuperación muscular.</p>
-                <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png" alt="carrito"></button>
-            </div>
-
-            <div class=" publicacion">
-                    <div class="publ_general">
-                        <img src="./img/productos/shaker1.png" alt="shaker ena white">
-                        <p> SHAKER WHITE-ENA</p>
-                        <p> $4.320</p>
-                    </div>
-                    <p class="descrip">Recipientes para mezclar y transportar suplementos de forma conveniente.</p>
-                    <button type="button" class="btn btn-outline-danger">Añadir al carrito <img src="img/carrito.png"
-                            alt="carrito"></button>
-            </div>
-
-            <div class=" publicacion">
-                        <div class="publ_general">
-                            <img src="./img/productos/shaker2.png" alt="shaker ena black">
-                            <p> SHAKER BLACK-ENA</p>
-                            <p> $4.320</p>
-                        </div>
-                        <p class="descrip">Recipientes para mezclar y transportar suplementos de forma conveniente.</p>
-                        <button type="button" class="btn btn-outline-danger">Añadir al carrito <img
-                                src="img/carrito.png" alt="carrito"></button>
-            </div>
 
     </main>
     <footer>
@@ -458,6 +224,9 @@
         </div>
     </footer>
 
+    <!-- script JS   -->
+    <script src="./js/app.js"></script>
+
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -465,6 +234,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
 </body>
 
 </html>
