@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suplem-arg</title>
+    <title>Carrito</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,25 +22,25 @@
         content="suplem-arg,suplemarg,suplem arg,suplementos,suplementacion,ganancia muscular,musculos,deporte,culturismo,proteina,creatina,bcaa,amino acidos,fuerza,ganar fuerza,ganancia de fuerza,perder peso,adelgazar,perder grasa,tonificar,tonificacion,tonificacion muscular,argentina,suplementos argentina,suplementos buenos aires">
 
     <!-- Primary Meta Tags -->
-    <title>Splem-Arg/Acceder</title>
-    <meta name="title" content="Splem-Arg/Acceder" />
+    <title>Splem-Arg</title>
+    <meta name="title" content="Splem-Arg" />
     <meta name="description"
-        content="Accede a tu cuenta en Suplem-Arg para gestionar tus pedidos, guardar tus productos favoritos y disfrutar de ofertas exclusivas en suplementos deportivos de primera calidad. Inicia sesión y descubre todo lo que tenemos preparado para ti. ¡Tu portal de bienestar y rendimiento físico te espera!" />
+        content="Descubre en Suplem-Arg una amplia selección de suplementos deportivos de alta calidad para potenciar tu rendimiento y alcanzar tus objetivos fitness. Envíos rápidos y asesoramiento personalizado. ¡Haz de Suplem-Arg tu aliado en el mundo del deporte!" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
-    <meta property="og:title" content="Splem-Arg/Acceder" />
+    <meta property="og:title" content="Splem-Arg" />
     <meta property="og:description"
-        content="Accede a tu cuenta en Suplem-Arg para gestionar tus pedidos, guardar tus productos favoritos y disfrutar de ofertas exclusivas en suplementos deportivos de primera calidad. Inicia sesión y descubre todo lo que tenemos preparado para ti. ¡Tu portal de bienestar y rendimiento físico te espera!" />
+        content="Descubre en Suplem-Arg una amplia selección de suplementos deportivos de alta calidad para potenciar tu rendimiento y alcanzar tus objetivos fitness. Envíos rápidos y asesoramiento personalizado. ¡Haz de Suplem-Arg tu aliado en el mundo del deporte!" />
     <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://metatags.io/" />
-    <meta property="twitter:title" content="Splem-Arg/Acceder" />
+    <meta property="twitter:title" content="Splem-Arg" />
     <meta property="twitter:description"
-        content="Accede a tu cuenta en Suplem-Arg para gestionar tus pedidos, guardar tus productos favoritos y disfrutar de ofertas exclusivas en suplementos deportivos de primera calidad. Inicia sesión y descubre todo lo que tenemos preparado para ti. ¡Tu portal de bienestar y rendimiento físico te espera!" />
+        content="Descubre en Suplem-Arg una amplia selección de suplementos deportivos de alta calidad para potenciar tu rendimiento y alcanzar tus objetivos fitness. Envíos rápidos y asesoramiento personalizado. ¡Haz de Suplem-Arg tu aliado en el mundo del deporte!" />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
@@ -51,22 +51,22 @@
     <header>
         <nav class="menu">
 
-            <a href="../pages/registrarse.html">
+            <a href="./registrarse.html">
                 <img src="../img/registro.png" alt="register" class="navimg">
                 <li>Registrarse</li>
             </a>
 
-            <a href="../pages/acceder.html">
+            <a href="./acceder.html">
                 <img src="../img/ingresar.png" alt="login" class="navimg">
                 <li>Acceder</li>
             </a>
 
-            <a href="../pages/info.html">
+            <a href="./info.html">
                 <img src="../img/info.png" alt="info" class="navimg">
                 <li>Info</li>
             </a>
 
-            <a href="../pages/contacto.html">
+            <a href="./contacto.html">
                 <img src="../img/contacto.png" alt="contacto" class="navimg">
                 <li>Contacto</li>
             </a>
@@ -113,23 +113,40 @@
         </div>
     </header>
 
+
     <main>
 
-        <h1 class="titulo">INGRESE SUS DATOS</h1>
-        <section class="acceder">
-            <form id="loginForm">
-                <label>Ingrese sus datos</label>
-                <input type="text" name="usuario" placeholder="usuario" id="usuario">
-                <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña">
-                <input type="submit" value="Ingresar" class="submit" id="ingresar">
+        <section class="carrito">
 
-                <p>
-                    <a href="./registrarse.html">¿No tienes cuenta? ingresa aqui.</a>
-                </p>
-            </form>
+
+            <div class="productoCarrito">
+                <div class="itemProductoCarrito1">
+                    <img src="../img/productos/ena-bcaa.png">
+                    <small>BCAA ENA</small>
+                </div>
+                <div class="itemProductoCarrito2">
+                    <small>Precio por unidad</small>
+                    <p>$23232</p>
+                </div>
+                <div class="itemProductoCarrito3">
+                    <small>Cantidad</small>
+                    <p>2</p>
+                </div>
+                <div class="itemProductoCarrito4">
+                    <small>Precio Total</small>
+                    <p>$46464</p>
+                </div>
+                <div class="itemProductoCarrito5">
+                    <button class="trash"><i class="bi bi-trash-fill"></i></button>
+                </div>
+            </div>
+
+
         </section>
 
+
     </main>
+
 
     <footer>
 
@@ -161,11 +178,8 @@
         </div>
     </footer>
 
-    <!-- script sweet alert   -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <!-- script JS   -->
-    <script src="../js/acceder.js"></script>
+    <script src="../js/app.js"></script>
 
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -174,4 +188,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
 </body>
+
+</html>

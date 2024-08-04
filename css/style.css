@@ -1,4 +1,13 @@
 /*base*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
 /*components*/
 /*body*/
 /*body*/
@@ -313,10 +322,13 @@ footer {
   padding: 5px;
   border-radius: 5px;
   border: solid 3px red;
+  background-color: transparent;
+  color: white;
 }
 
 .submit {
   transition: 0.3s;
+  color: red;
 }
 .submit:hover {
   color: white;
@@ -362,13 +374,20 @@ footer {
   background-color: rgba(92, 92, 92, 0.616);
   padding: 5px;
   border-radius: 5px;
+  border: solid 0.5px transparent;
+  transition: 0.3s;
+}
+.contacto ul li a img:hover {
+  background-color: red;
+  border: solid 0.5px rgba(92, 92, 92, 0.616);
 }
 
 .contacto ul li a h2 {
   background-color: rgba(92, 92, 92, 0.616);
   padding: 10px;
   border-radius: 5px;
-  transition: 0.8s;
+  border: solid 0.5px transparent;
+  transition: 0.3s;
 }
 .contacto ul li a h2:hover {
   background-color: rgba(92, 92, 92, 0);
@@ -386,6 +405,54 @@ footer {
 /*publicaciones*/
 .epigrafe {
   background-color: rgba(0, 0, 0, 0.849);
+}
+
+.botonesCompras {
+  display: flex;
+  justify-content: center;
+}
+
+.botoneraFiltros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+.botoneraFiltros button {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  background-color: black;
+  color: red;
+  transition: 0.3s;
+  font-size: medium;
+}
+.botoneraFiltros button:hover {
+  border: solid 1px red;
+  color: white;
+}
+.botoneraFiltros .pulsado {
+  color: white;
+  background-color: red;
+}
+
+.carritoIcon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 35px;
+  width: auto;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  background-color: black;
+  color: green;
+  transition: 0.3s;
+  padding: 5px;
+  font-size: x-large;
+}
+.carritoIcon:hover {
+  border: solid 1px green;
 }
 
 .publicaciones {
@@ -573,9 +640,12 @@ footer {
   padding: 5px;
   border-radius: 5px;
   border: solid 3px red;
+  background-color: transparent;
+  color: white;
 }
 .registro form .submit {
   transition: 0.3s;
+  color: red;
 }
 .registro form .submit:hover {
   color: white;
@@ -586,6 +656,66 @@ footer {
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.849);
   padding: 5px;
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.productoCarrito {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.404);
+}
+.productoCarrito .itemProductoCarrito1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productoCarrito .itemProductoCarrito1 img {
+  height: 100px;
+}
+.productoCarrito .itemProductoCarrito1 small {
+  background-color: rgba(92, 92, 92, 0.616);
+  color: white;
+  font-weight: bold;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.productoCarrito .itemProductoCarrito2, .productoCarrito .itemProductoCarrito3, .productoCarrito .itemProductoCarrito4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(92, 92, 92, 0.616);
+  color: white;
+  font-weight: bold;
+}
+.productoCarrito .itemProductoCarrito2 small, .productoCarrito .itemProductoCarrito3 small, .productoCarrito .itemProductoCarrito4 small {
+  text-decoration: underline;
+}
+.productoCarrito .itemProductoCarrito5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productoCarrito .itemProductoCarrito5 .trash {
+  border: none;
+  font-size: x-large;
+  background-color: transparent;
+  transition: 0.2s;
+  border-radius: 50px;
+}
+.productoCarrito .itemProductoCarrito5 .trash:hover {
+  background-color: black;
+  color: red;
+  transform: scale(1.1);
 }
 
 /*media queries*/
