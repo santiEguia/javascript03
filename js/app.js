@@ -74,41 +74,6 @@ function cargarProductos(productos) {
     });
 }
 
-
-
-
-
-
-
-
-
-
-/* function cargarProductos(productos) {
-    publicacionesContainer.innerHTML=""
-    productos.forEach(producto => {
-        
-        let card = document.querySelector("template").content.cloneNode(true)
-
-        card.querySelector('img').src = producto.img
-        card.querySelector('h5').textContent = producto.nombre
-        card.querySelector('small').textContent = producto.precio
-        card.querySelector('button').addEventListener("click",()=>{
-
-            let productoInfo = 
-                {foto: producto.img,
-                nombre: producto.nombre,
-                precio: producto.precio}
-            
-
-            localStorage.setItem('producto', JSON.stringify(productoInfo))
-
-        })
-        
-
-        publicacionesContainer.append(card);
-    })
-} */
-
 cargarProductos(productos)
 
 botonesFiltro.forEach(boton => {
