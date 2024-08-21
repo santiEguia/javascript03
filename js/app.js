@@ -38,52 +38,7 @@ let publicacionesContainer = document.querySelector("#publicacionesContainer")
 let botonesFiltro = document.querySelectorAll(".botonesFiltro")
 
 
-
-
-
-
 function cargarProductos(productos) {
-    publicacionesContainer.innerHTML = "";
-    productos.forEach(producto => {
-        
-        let card = document.querySelector("template").content.cloneNode(true);
-
-        card.querySelector('img').src = producto.img;
-        card.querySelector('h5').textContent = producto.nombre;
-        card.querySelector('small').textContent = producto.precio;
-        card.querySelector('button').addEventListener("click", () => {
-            // Crear objeto de producto
-            let productoInfo = {
-                foto: producto.img,
-                nombre: producto.nombre,
-                precio: producto.precio
-            };
-
-            // Obtener la lista de productos del localStorage, o inicializar como un arreglo vacío si no existe
-            let productosGuardados = JSON.parse(localStorage.getItem('productos')) || [];
-
-            // Agregar el nuevo producto a la lista
-            productosGuardados.push(productoInfo);
-
-            // Guardar la lista actualizada en el localStorage
-            localStorage.setItem('productos', JSON.stringify(productosGuardados));
-            
-        });
-
-        publicacionesContainer.append(card);
-    });
-}
-
-
-
-
-
-
-
-
-
-
-/* function cargarProductos(productos) {
     publicacionesContainer.innerHTML=""
     productos.forEach(producto => {
         
@@ -107,7 +62,8 @@ function cargarProductos(productos) {
 
         publicacionesContainer.append(card);
     })
-} */
+}
+
 
 cargarProductos(productos)
 
